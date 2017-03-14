@@ -3,7 +3,7 @@
 }
 
 body {
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 0 auto;
     font-family: sans-serif;
     font-size: 0.875em;
@@ -15,30 +15,56 @@ body {
 
 header {
     min-height: 10vh;
-    border: solid 5px red;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(200, 200, 200, 0.9);
+    box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.4), 0px 0px 8px 5px rgba(176, 196, 222, 0.4) inset;
+    border-radius: 0 0 5px 5px;
 }
+
 main {
     flex: 1 1 auto;
     min-height: 50vh;
-    border: solid 5px red;
-    display:flex;
-    
-}
-article {
-    min-width: 50vh;
-   border: solid 5px black; 
-}
-    
-aside {
-    min-width: 10vh;
-   border: solid 5px black; 
+    border: solid 1px red;
+    display: flex;
 }
 
+article {
+    flex: 1;
+    border: solid 2px green;
+}
+
+.aside_left {
+    flex: initial;
+    width: 100px;
+    min-width: 50px;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(200, 200, 200, 0.9);
+    box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.4), 0px 0px 8px 5px rgba(176, 196, 222, 0.4) inset;
+}
+
+.aside_right {
+    flex: initial;
+    width: 200px;
+    min-width: 50px;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(200, 200, 200, 0.9);
+    box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.4), 0px 0px 8px 5px rgba(176, 196, 222, 0.4) inset;
+}
+
+section {
+    min-height: 50px;
+    border: solid 2px black;
+}
 
 footer {
-    border: solid 5px red;
-
-    
+    min-height: 50px;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(200, 200, 200, 0.9);
+    box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.4), 0px 0px 8px 5px rgba(176, 196, 222, 0.4) inset;
+    border-radius: 5px 5px 0 0;
 }
 
-
+footer p {
+    padding: 2%;
+    color: rgb(105, 108, 109);
+}
