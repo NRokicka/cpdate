@@ -6,9 +6,9 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     font-family: sans-serif;
-    font-size: 0.875em;
+    font-size: 0.8em;
     line-height: 1.6em;
-    color: #222;
+    color: rgb(105, 108, 109);
     display: flex;
     flex-direction: column;
 }
@@ -23,7 +23,7 @@ header {
 
 main {
     flex: 1 1 auto;
-    min-height: 50vh;
+    min-height: 80vh;
     border: solid 1px red;
     display: flex;
 }
@@ -33,6 +33,84 @@ article {
     border: solid 2px green;
 }
 
+.icon:before {
+  font-size: 10px;
+  color: rgb(105, 108, 109);
+  padding-right: 10px;
+}
+
+.icon.icon-menu {
+  cursor: pointer;
+  padding: 10px;
+}
+.icon.icon-menu:before {
+  content: "\f066";
+}
+.collapsed .icon.icon-menu:before {
+  content: "\f065";
+}
+.icon.c1:before {
+  content: "\f013";
+}
+
+.icon.c2:before {
+  content: "\f08b";
+}
+
+.icon.c3:before {
+  content: "\f075";
+}
+
+.icon.c4:before {
+  content: "\f000";
+}
+
+.icon.c5:before {
+  content: "\f08a";
+}
+
+.layout {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.menu, .content {
+  border: 1px solid #222;
+}
+.menu {
+  padding: 10px 0px;
+  transition: flex 0.3s ease;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 20px 0px;
+  padding: 0px;
+}
+.menu ul li {
+  line-height: 40px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.menu ul li:hover {
+  background-color: rgba(105, 108, 109, 0.4);
+}
+
+.content {
+  flex: 1 1 100px;
+  padding: 20px;
+  border-left: none;
+}
+.menu {
+  flex: 0.0000001 1 180px;
+}
+.collapsed .menu {
+  flex: 0.0000001 1 48px;
+  overflow: visible;
+}
+
+.collapsed .label {
+  display: none;
+}
 .aside_left {
     flex: initial;
     width: 100px;
