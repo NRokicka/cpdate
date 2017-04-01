@@ -32,7 +32,9 @@ article {
     flex: 1;
     border: solid 2px green;
 }
-
+img {
+    width: 20%;
+}
 .icon:before {
   font-size: 10px;
   color: rgb(105, 108, 109);
@@ -42,31 +44,34 @@ article {
 .icon.icon-menu {
   cursor: pointer;
   padding: 10px;
-}
+  
+ }
 .icon.icon-menu:before {
-  content: "\f066";
+  
+    
 }
 .collapsed .icon.icon-menu:before {
-  content: "\f065";
+   
+    
 }
 .icon.c1:before {
-  content: "\f013";
+  
 }
 
 .icon.c2:before {
-  content: "\f08b";
+  
 }
 
 .icon.c3:before {
-  content: "\f075";
+  
 }
 
 .icon.c4:before {
-  content: "\f000";
+  
 }
 
 .icon.c5:before {
-  content: "\f08a";
+  
 }
 
 .layout {
