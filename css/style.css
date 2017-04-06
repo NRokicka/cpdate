@@ -1,12 +1,24 @@
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?31919061');
+  src: url('../fonts/fontello.eot?31919061#iefix') format('embedded-opentype'),
+  url('../fonts/fontello.woff?31919061') format('woff'),
+  url('../fonts/fontello.ttf?31919061') format('truetype'),
+  url('../fonts/fontello.svg?31919061#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 .icon {
-  font-family: 'FontAwesome', sans-serif;
+font-family: "fontello";
+font-style: normal;
+font-weight: normal;
 }
+
 .icon:before {
-  font-size: 10px;
-  color: #000;
+  font-size: 12px;
+  color: rgb(105, 108, 109);
   padding-right: 10px;
 }
 
@@ -15,36 +27,37 @@
   padding: 10px;
 }
 .icon.icon-menu:before {
-  content: "\f066";
+  content: "\e800";
 }
 .collapsed .icon.icon-menu:before {
-  content: "\f065";
+  content: "\e801";
 }
 .icon.c1:before {
-  content: "\f013";
+  content: "\e803";
 }
 
 .icon.c2:before {
-  content: "\f08b";
+  content: "\f098";
 }
 
 .icon.c3:before {
-  content: "\f075";
+  content: "\e802";
 }
 
 .icon.c4:before {
-  content: "\f000";
+  content: "\e803";
 }
 
 .icon.c5:before {
-  content: "\f08a";
+  content: "\f098";
 }
 
 .layout {
   display: flex;
   flex-flow: row nowrap;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 12px;
+  color: rgb(105, 108, 109);
 }
 .menu, .content {
   border: 1px solid #fff;
@@ -65,7 +78,7 @@
   cursor: pointer;
 }
 .menu ul li:hover {
-  background-color: #ffbbbb;
+  color: red;
 }
 
 .content {
